@@ -194,17 +194,20 @@ tasks.named('jar', Jar).configure {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId = "net.whmstve" // or your namespace
-            artifactId = "thequestionlib"
-            version = "1.0.0"
-
             from components.java
+            groupId = "net.whmstve"      // your package namespace
+            artifactId = "thequestionlib" // your library name
+            version = "1.0.0"
         }
     }
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Whmstve/The-Question-Library")
+            url = uri("https://maven.pkg.github.com/Whmstve/The-Question-Library/1.20.1")
+            credentials {
+                username = project.findProperty("gpr.user") ?: ""
+                password = project.findProperty("gpr.key") ?: ""
+            }
         }
     }
 }
