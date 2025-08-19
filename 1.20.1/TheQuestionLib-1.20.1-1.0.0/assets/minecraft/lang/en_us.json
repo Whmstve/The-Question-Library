@@ -1,0 +1,8 @@
+{
+  "freecam.enabled": "Free Camera is now enabled",
+  "freecam.disabled": "Free Camera is now disabled",
+  "options.cameraCommand": "Configurable Camera",
+  "argument.camera_mode.invalid": "Invalid camera mode",
+  "argument.easing_type.invalid": "Invalid easing type",
+  "key.toggleFreeCamera": "Free Camera"
+}

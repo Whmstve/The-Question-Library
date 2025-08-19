@@ -1,0 +1,62 @@
+{
+  "mappings": {
+    "net/whmstve/thequestionlib/mixin/MixinClientLevel": {
+      "disconnect": "Lnet/minecraft/client/multiplayer/ClientLevel;m_7462_()V"
+    },
+    "net/whmstve/thequestionlib/mixin/MixinVideoSettingsScreen": {
+      "init": "Lnet/minecraft/client/gui/screens/VideoSettingsScreen;m_7856_()V"
+    },
+    "net/whmstve/thequestionlib/mixin/MixinClientPacketListener": {
+      "handleDisconnect": "Lnet/minecraft/client/multiplayer/ClientPacketListener;m_6008_(Lnet/minecraft/network/protocol/game/ClientboundDisconnectPacket;)V"
+    },
+    "net/whmstve/thequestionlib/mixin/MixinCamera": {
+      "move": "Lnet/minecraft/client/Camera;m_90568_(DDD)V",
+      "setup": "Lnet/minecraft/client/Camera;m_90575_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    },
+    "net/whmstve/thequestionlib/mixin/MixinMinecraft": {
+      "handleKeybinds": "Lnet/minecraft/client/Minecraft;m_91279_()V",
+      "Lnet/minecraft/client/Options;setCameraType(Lnet/minecraft/client/CameraType;)V": "Lnet/minecraft/client/Options;m_92157_(Lnet/minecraft/client/CameraType;)V"
+    },
+    "net/whmstve/thequestionlib/mixin/MixinOptions": {
+      "getCameraType": "Lnet/minecraft/client/Options;m_92176_()Lnet/minecraft/client/CameraType;",
+      "processOptions": "Lnet/minecraft/client/Options;m_168427_(Lnet/minecraft/client/Options$FieldAccess;)V"
+    },
+    "net/whmstve/thequestionlib/mixin/MixinGameRenderer": {
+      "bobView": "Lnet/minecraft/client/renderer/GameRenderer;m_109138_(Lcom/mojang/blaze3d/vertex/PoseStack;F)V",
+      "tick": "Lnet/minecraft/client/renderer/GameRenderer;m_109148_()V",
+      "render": "Lnet/minecraft/client/renderer/GameRenderer;m_109093_(FJZ)V",
+      "Lnet/minecraft/client/gui/Gui;render(Lnet/minecraft/client/gui/GuiGraphics;F)V": "Lnet/minecraft/client/gui/Gui;m_280421_(Lnet/minecraft/client/gui/GuiGraphics;F)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "net/whmstve/thequestionlib/mixin/MixinClientLevel": {
+        "disconnect": "Lnet/minecraft/client/multiplayer/ClientLevel;m_7462_()V"
+      },
+      "net/whmstve/thequestionlib/mixin/MixinVideoSettingsScreen": {
+        "init": "Lnet/minecraft/client/gui/screens/VideoSettingsScreen;m_7856_()V"
+      },
+      "net/whmstve/thequestionlib/mixin/MixinClientPacketListener": {
+        "handleDisconnect": "Lnet/minecraft/client/multiplayer/ClientPacketListener;m_6008_(Lnet/minecraft/network/protocol/game/ClientboundDisconnectPacket;)V"
+      },
+      "net/whmstve/thequestionlib/mixin/MixinCamera": {
+        "move": "Lnet/minecraft/client/Camera;m_90568_(DDD)V",
+        "setup": "Lnet/minecraft/client/Camera;m_90575_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+      },
+      "net/whmstve/thequestionlib/mixin/MixinMinecraft": {
+        "handleKeybinds": "Lnet/minecraft/client/Minecraft;m_91279_()V",
+        "Lnet/minecraft/client/Options;setCameraType(Lnet/minecraft/client/CameraType;)V": "Lnet/minecraft/client/Options;m_92157_(Lnet/minecraft/client/CameraType;)V"
+      },
+      "net/whmstve/thequestionlib/mixin/MixinOptions": {
+        "getCameraType": "Lnet/minecraft/client/Options;m_92176_()Lnet/minecraft/client/CameraType;",
+        "processOptions": "Lnet/minecraft/client/Options;m_168427_(Lnet/minecraft/client/Options$FieldAccess;)V"
+      },
+      "net/whmstve/thequestionlib/mixin/MixinGameRenderer": {
+        "bobView": "Lnet/minecraft/client/renderer/GameRenderer;m_109138_(Lcom/mojang/blaze3d/vertex/PoseStack;F)V",
+        "tick": "Lnet/minecraft/client/renderer/GameRenderer;m_109148_()V",
+        "render": "Lnet/minecraft/client/renderer/GameRenderer;m_109093_(FJZ)V",
+        "Lnet/minecraft/client/gui/Gui;render(Lnet/minecraft/client/gui/GuiGraphics;F)V": "Lnet/minecraft/client/gui/Gui;m_280421_(Lnet/minecraft/client/gui/GuiGraphics;F)V"
+      }
+    }
+  }
+}

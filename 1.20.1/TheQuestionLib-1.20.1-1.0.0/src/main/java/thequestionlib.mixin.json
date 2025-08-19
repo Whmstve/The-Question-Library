@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.whmstve.thequestionlib.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "thequestionlib.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "MixinCamera",
+    "MixinClientLevel",
+    "MixinClientPacketListener",
+    "MixinGameRenderer",
+    "MixinMinecraft",
+    "MixinVideoSettingsScreen"
+  ]
+}
