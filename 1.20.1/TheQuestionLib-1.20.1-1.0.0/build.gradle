@@ -194,14 +194,21 @@ tasks.named('jar', Jar).configure {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifact jar
+            groupId = "net.whmstve" // or your namespace
+            artifactId = "thequestionlib"
+            version = "1.0.0"
+
+            from components.java
         }
     }
     repositories {
-        mavenLocal()
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/Whmstve/The-Question-Library")
+        }
     }
 }
-jar.finalizedBy('publishToMavenLocal')
+
 
 
 tasks.withType(JavaCompile).configureEach {
